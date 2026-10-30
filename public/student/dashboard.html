@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Student Dashboard - EventHub</title>
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+
+        <div class="container nav-container">
+
+            <div class="logo">
+                EventHub
+            </div>
+
+            <div class="nav-links">
+
+                <a href="../index.html">
+                    Home
+                </a>
+
+                <a href="../events.html">
+                    Events
+                </a>
+
+                <a href="../index.html#about">
+                    About
+                </a>
+
+                <a href="../index.html#contact">
+                    Contact
+                </a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= STUDENT DASHBOARD ================= -->
+
+    <main>
+
+        <section class="dashboard-section">
+
+            <div class="container">
+
+                <!-- Dashboard Header -->
+
+                <div class="dashboard-header">
+
+                    <div>
+
+                        <h1 id="welcomeMessage">
+                            Welcome!
+                        </h1>
+
+                        <p>
+                            Manage your EventHub account and registrations.
+                        </p>
+
+                    </div>
+
+                    <button
+                        id="logoutBtn"
+                        class="secondary-btn"
+                    >
+                        Logout
+                    </button>
+
+                </div>
+
+
+                <!-- ================= PROFILE CARD ================= -->
+
+                <div class="dashboard-card">
+
+                    <h2>
+                        My Profile
+                    </h2>
+
+                    <div class="profile-details">
+
+                        <div class="profile-item">
+
+                            <strong>
+                                Name
+                            </strong>
+
+                            <span id="studentName">
+                                -
+                            </span>
+
+                        </div>
+
+
+                        <div class="profile-item">
+
+                            <strong>
+                                Student ID
+                            </strong>
+
+                            <span id="studentId">
+                                -
+                            </span>
+
+                        </div>
+
+
+                        <div class="profile-item">
+
+                            <strong>
+                                Department
+                            </strong>
+
+                            <span id="studentDepartment">
+                                -
+                            </span>
+
+                        </div>
+
+
+                        <div class="profile-item">
+
+                            <strong>
+                                Year
+                            </strong>
+
+                            <span id="studentYear">
+                                -
+                            </span>
+
+                        </div>
+
+
+                        <div class="profile-item">
+
+                            <strong>
+                                Email
+                            </strong>
+
+                            <span id="studentEmail">
+                                -
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= DASHBOARD ACTIONS ================= -->
+
+                <div class="dashboard-card">
+
+                    <h2>
+                        Quick Actions
+                    </h2>
+
+                    <div class="dashboard-actions">
+
+                        <a
+                            href="../events.html"
+                            class="primary-btn"
+                        >
+                            Browse Events
+                        </a>
+
+
+                        <a
+                            href="registrations.html"
+                            class="secondary-btn"
+                        >
+                            My Registrations
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <p>
+                © 2026 EventHub. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="../js/student-dashboard.js"></script>
+
+</body>
+
+</html>
