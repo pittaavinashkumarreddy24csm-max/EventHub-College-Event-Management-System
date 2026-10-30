@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Admin Dashboard | EventHub</title>
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- ==============================
+         NAVIGATION
+    =============================== -->
+
+    <header class="navbar">
+
+        <div class="container navbar-container">
+
+            <a
+                href="../index.html"
+                class="logo"
+            >
+                EventHub
+            </a>
+
+
+            <nav class="nav-links">
+
+                <a href="../index.html">
+                    Home
+                </a>
+
+                <a href="../events.html">
+                    Events
+                </a>
+
+                <a href="dashboard.html">
+                    Dashboard
+                </a>
+
+                <a
+                    href="#"
+                    id="logoutLink"
+                >
+                    Logout
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ==============================
+         DASHBOARD
+    =============================== -->
+
+    <main class="admin-dashboard">
+
+        <div class="container">
+
+
+            <div class="dashboard-heading">
+
+                <div>
+
+                    <h1>
+                        Admin Dashboard
+                    </h1>
+
+                    <p>
+                        Manage events and monitor
+                        participant registrations.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ==============================
+                 ACTION BUTTONS
+            =============================== -->
+
+            <div class="dashboard-actions">
+
+                <a
+                    href="add-event.html"
+                    class="primary-btn"
+                >
+                    + Add New Event
+                </a>
+
+            </div>
+
+
+
+            <!-- ==============================
+                 STATISTICS
+            =============================== -->
+
+            <div class="dashboard-stats">
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        📅
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Total Events
+                        </h3>
+
+                        <p id="totalEvents">
+                            0
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        👥
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Total Participants
+                        </h3>
+
+                        <p id="totalParticipants">
+                            0
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- ==============================
+                 EVENTS
+            =============================== -->
+
+            <div class="dashboard-section">
+
+                <div class="section-heading">
+
+                    <h2>
+                        Event Overview
+                    </h2>
+
+                    <p>
+                        View, edit and manage your
+                        events and their registered
+                        participants.
+                    </p>
+
+                </div>
+
+
+                <div
+                    id="eventsTableContainer"
+                    class="events-table-container"
+                >
+
+                    <p>
+                        Loading events...
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+
+    <!-- ==============================
+         FOOTER
+    =============================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <p>
+                © 2026 EventHub. All rights reserved.
+            </p>
+
+            <p>
+                Event Management System
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ==============================
+         JAVASCRIPT
+    =============================== -->
+
+    <script src="../js/admin-auth.js"></script>
+
+    <script src="../js/admin-dashboard.js"></script>
+
+
+    <script>
+
+        const logoutLink =
+            document.getElementById(
+                "logoutLink"
+            );
+
+
+        if (logoutLink) {
+
+            logoutLink.addEventListener(
+                "click",
+                function (event) {
+
+                    event.preventDefault();
+
+                    logoutAdmin();
+
+                }
+            );
+
+        }
+
+    </script>
+
+</body>
+
+</html>

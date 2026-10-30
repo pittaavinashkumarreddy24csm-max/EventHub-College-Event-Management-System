@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Login | EventHub</title>
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="container nav-container">
+
+            <a
+                href="../index.html"
+                class="logo">
+                EventHub
+            </a>
+
+            <div class="nav-links">
+
+                <a href="../index.html">
+                    Home
+                </a>
+
+                <a href="../events.html">
+                    Events
+                </a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- LOGIN SECTION -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="login-container">
+
+                <div class="login-card">
+
+                    <div class="section-heading">
+
+                        <p class="section-label">
+                            ADMIN / COORDINATOR
+                        </p>
+
+                        <h1>
+                            Admin Login
+                        </h1>
+
+                        <p>
+                            Sign in to manage events and participants.
+                        </p>
+
+                    </div>
+
+
+                    <form
+                        id="adminLoginForm">
+
+
+                        <!-- ADMIN ID / EMAIL -->
+
+                        <div class="form-group">
+
+                            <label for="username">
+                                Admin / Coordinator ID or Email
+                            </label>
+
+                            <input
+                                type="text"
+                                id="username"
+                                placeholder="Enter your ID or email"
+                                required>
+
+                        </div>
+
+
+                        <!-- PASSWORD -->
+
+                        <div class="form-group">
+
+                            <label for="password">
+                                Password
+                            </label>
+
+                            <input
+                                type="password"
+                                id="password"
+                                placeholder="Enter your password"
+                                required>
+
+                        </div>
+
+
+                        <!-- MESSAGE -->
+
+                        <p
+                            id="loginMessage"
+                            class="login-message">
+                        </p>
+
+
+                        <!-- LOGIN BUTTON -->
+
+                        <button
+                            type="submit"
+                            class="primary-btn"
+                            style="width: 100%;">
+
+                            Sign In
+
+                        </button>
+
+                    </form>
+
+
+                    <p
+                        style="
+                        text-align: center;
+                        margin-top: 20px;
+                        ">
+
+                        Don't have an account?
+
+                        <a href="register.html">
+                            Create Account
+                        </a>
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <p>
+                © 2026 EventHub. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script
+        src="../js/admin-login.js">
+    </script>
+
+</body>
+
+</html>

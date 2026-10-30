@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+<title>Admin Registration - EventHub</title>
+
+<link
+    rel="stylesheet"
+    href="../css/style.css">
+
+
+</head>
+
+<body>
+
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+    <div class="container nav-container">
+
+        <a
+            href="../index.html"
+            class="logo">
+            EventHub
+        </a>
+
+        <div class="nav-links">
+
+            <a href="../index.html">
+                Home
+            </a>
+
+            <a href="../events.html">
+                Events
+            </a>
+
+            <a href="../index.html#about">
+                About
+            </a>
+
+            <a href="../index.html#contact">
+                Contact
+            </a>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- ADMIN REGISTRATION -->
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="login-container">
+
+            <div class="login-card">
+
+                <div class="section-heading">
+
+                    <p class="section-label">
+                        ADMIN / COORDINATOR
+                    </p>
+
+                    <h1>
+                        Create Account
+                    </h1>
+
+                    <p>
+                        Register as a college event
+                        administrator or coordinator.
+                    </p>
+
+                </div>
+
+
+                <form
+                    id="adminRegisterForm">
+
+
+                    <!-- FULL NAME -->
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your full name"
+                            required>
+
+                    </div>
+
+
+                    <!-- EMPLOYEE / COORDINATOR ID -->
+
+                    <div class="form-group">
+
+                        <label for="adminId">
+                            Admin / Coordinator ID
+                        </label>
+
+                        <input
+                            type="text"
+                            id="adminId"
+                            placeholder="Enter your ID"
+                            required>
+
+                    </div>
+
+
+                    <!-- ROLE -->
+
+                    <div class="form-group">
+
+                        <label for="role">
+                            Account Type
+                        </label>
+
+                        <select
+                            id="role"
+                            required>
+
+                            <option value="">
+                                Select account type
+                            </option>
+
+                            <option value="admin">
+                                Admin
+                            </option>
+
+                            <option value="coordinator">
+                                Coordinator
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- DEPARTMENT -->
+
+                    <div class="form-group">
+
+                        <label for="department">
+                            Department
+                        </label>
+
+                        <select
+                            id="department"
+                            required>
+
+                            <option value="">
+                                Select department
+                            </option>
+
+                            <option value="CSE">
+                                CSE
+                            </option>
+
+                            <option value="AI & ML">
+                                AI & ML
+                            </option>
+
+                            <option value="ECE">
+                                ECE
+                            </option>
+
+                            <option value="EEE">
+                                EEE
+                            </option>
+
+                            <option value="Mechanical">
+                                Mechanical
+                            </option>
+
+                            <option value="Civil">
+                                Civil
+                            </option>
+
+                            <option value="IT">
+                                IT
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- EMAIL -->
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email"
+                            required>
+
+                    </div>
+
+
+                    <!-- PASSWORD -->
+
+                    <div class="form-group">
+
+                        <label for="password">
+                            Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Create a password"
+                            required>
+
+                    </div>
+
+
+                    <!-- CONFIRM PASSWORD -->
+
+                    <div class="form-group">
+
+                        <label for="confirmPassword">
+                            Confirm Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            placeholder="Confirm your password"
+                            required>
+
+                    </div>
+
+
+                    <!-- MESSAGE -->
+
+                    <p
+                        id="adminRegisterMessage"
+                        class="login-message">
+                    </p>
+
+
+                    <!-- SUBMIT -->
+
+                    <button
+                        type="submit"
+                        class="primary-btn"
+                        style="width: 100%;">
+
+                        Create Account
+
+                    </button>
+
+
+                </form>
+
+
+                <p
+                    style="
+                    text-align: center;
+                    margin-top: 20px;
+                    ">
+
+                    Already have an account?
+
+                    <a
+                        href="login.html">
+
+                        Sign In
+
+                    </a>
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <p>
+            © 2026 EventHub. All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script
+    src="../js/admin-register.js">
+</script>
+
+
+</body>
+
+</html>

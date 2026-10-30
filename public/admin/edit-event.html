@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Edit Event | EventHub</title>
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- ==============================
+         NAVIGATION
+    =============================== -->
+
+    <header class="navbar">
+
+        <div class="container navbar-container">
+
+            <a
+                href="../index.html"
+                class="logo"
+            >
+                EventHub
+            </a>
+
+
+            <nav class="nav-links">
+
+                <a href="../index.html">
+                    Home
+                </a>
+
+                <a href="../events.html">
+                    Events
+                </a>
+
+                <a href="dashboard.html">
+                    Dashboard
+                </a>
+
+                <a
+                    href="#"
+                    id="logoutLink"
+                >
+                    Logout
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ==============================
+         EDIT EVENT
+    =============================== -->
+
+    <main class="admin-dashboard">
+
+        <div class="container">
+
+
+            <div class="dashboard-heading">
+
+                <div>
+
+                    <h1>
+                        Edit Event
+                    </h1>
+
+                    <p>
+                        Update the details of your event.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ==============================
+                 EVENT FORM
+            =============================== -->
+
+            <div class="dashboard-section">
+
+                <div class="section-heading">
+
+                    <h2>
+                        Event Information
+                    </h2>
+
+                    <p>
+                        Modify the event details below.
+                    </p>
+
+                </div>
+
+
+                <form
+                    id="editEventForm"
+                    class="admin-form"
+                >
+
+
+                    <!-- Event Title -->
+
+                    <div class="form-group">
+
+                        <label for="title">
+                            Event Title
+                        </label>
+
+                        <input
+                            type="text"
+                            id="title"
+                            name="title"
+                            placeholder="Enter event title"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- Date -->
+
+                    <div class="form-group">
+
+                        <label for="date">
+                            Event Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="date"
+                            name="date"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- Time -->
+
+                    <div class="form-group">
+
+                        <label for="time">
+                            Event Time
+                        </label>
+
+                        <input
+                            type="text"
+                            id="time"
+                            name="time"
+                            placeholder="Example: 10:00 AM"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- Venue -->
+
+                    <div class="form-group">
+
+                        <label for="venue">
+                            Venue
+                        </label>
+
+                        <input
+                            type="text"
+                            id="venue"
+                            name="venue"
+                            placeholder="Enter event venue"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- Department -->
+
+                    <div class="form-group">
+
+                        <label for="department">
+                            Department
+                        </label>
+
+                        <select
+                            id="department"
+                            name="department"
+                            required
+                        >
+
+                            <option value="">
+                                Select Department
+                            </option>
+
+                            <option value="CSE">
+                                CSE
+                            </option>
+
+                            <option value="AI & ML">
+                                AI & ML
+                            </option>
+
+                            <option value="ECE">
+                                ECE
+                            </option>
+
+                            <option value="EEE">
+                                EEE
+                            </option>
+
+                            <option value="Mechanical">
+                                Mechanical
+                            </option>
+
+                            <option value="Civil">
+                                Civil
+                            </option>
+
+                            <option value="IT">
+                                IT
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- Coordinator Name -->
+
+                    <div class="form-group">
+
+                        <label for="coordinatorName">
+                            Coordinator Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="coordinatorName"
+                            name="coordinatorName"
+                            placeholder="Enter coordinator name"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- Coordinator Role -->
+
+                    <div class="form-group">
+
+                        <label for="coordinatorRole">
+                            Coordinator Role
+                        </label>
+
+                        <select
+                            id="coordinatorRole"
+                            name="coordinatorRole"
+                            required
+                        >
+
+                            <option value="">
+                                Select Role
+                            </option>
+
+                            <option value="Admin">
+                                Admin
+                            </option>
+
+                            <option value="Coordinator">
+                                Coordinator
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- Coordinator Email -->
+
+                    <div class="form-group">
+
+                        <label for="coordinatorEmail">
+                            Coordinator Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="coordinatorEmail"
+                            name="coordinatorEmail"
+                            placeholder="Enter coordinator email"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- Description -->
+
+                    <div class="form-group">
+
+                        <label for="description">
+                            Description
+                        </label>
+
+                        <textarea
+                            id="description"
+                            name="description"
+                            rows="5"
+                            placeholder="Enter event description"
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+
+                    <!-- Registration Link -->
+
+                    <div class="form-group">
+
+                        <label for="registrationLink">
+                            Registration Link
+                        </label>
+
+                        <input
+                            type="url"
+                            id="registrationLink"
+                            name="registrationLink"
+                            placeholder="https://example.com/register"
+                        >
+
+                    </div>
+
+
+
+                    <!-- Maximum Participants -->
+
+                    <div class="form-group">
+
+                        <label for="maxParticipants">
+                            Maximum Participants
+                        </label>
+
+                        <input
+                            type="number"
+                            id="maxParticipants"
+                            name="maxParticipants"
+                            min="1"
+                            placeholder="Enter maximum participants"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- Message -->
+
+                    <div
+                        id="editEventMessage"
+                        class="login-message"
+                    ></div>
+
+
+
+                    <!-- Buttons -->
+
+                    <div class="dashboard-actions">
+
+                        <button
+                            type="submit"
+                            class="primary-btn"
+                        >
+                            Update Event
+                        </button>
+
+
+                        <a
+                            href="dashboard.html"
+                            class="secondary-btn"
+                        >
+                            Cancel
+                        </a>
+
+                    </div>
+
+
+                </form>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+
+    <!-- ==============================
+         FOOTER
+    ============================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <p>
+                © 2026 EventHub. All rights reserved.
+            </p>
+
+            <p>
+                Event Management System
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ==============================
+         JAVASCRIPT
+    ============================== -->
+
+    <script src="../js/admin-auth.js"></script>
+
+    <script src="../js/admin-edit-event.js"></script>
+
+
+    <script>
+
+        const logoutLink =
+            document.getElementById(
+                "logoutLink"
+            );
+
+
+        if (logoutLink) {
+
+            logoutLink.addEventListener(
+                "click",
+                function (event) {
+
+                    event.preventDefault();
+
+                    logoutAdmin();
+
+                }
+            );
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>

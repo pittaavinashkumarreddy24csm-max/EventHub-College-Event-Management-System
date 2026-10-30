@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Participants | EventHub</title>
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- ==============================
+         NAVIGATION
+    =============================== -->
+
+    <header class="navbar">
+
+        <div class="container navbar-container">
+
+            <a
+                href="../index.html"
+                class="logo"
+            >
+                EventHub
+            </a>
+
+
+            <nav class="nav-links">
+
+                <a href="../index.html">
+                    Home
+                </a>
+
+                <a href="../events.html">
+                    Events
+                </a>
+
+                <a href="dashboard.html">
+                    Dashboard
+                </a>
+
+                <a href="#"
+                   id="logoutLink">
+                    Logout
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ==============================
+         PARTICIPANTS PAGE
+    =============================== -->
+
+    <main class="admin-dashboard">
+
+        <div class="container">
+
+
+            <div class="dashboard-heading">
+
+                <h1>
+                    Event Participants
+                </h1>
+
+                <p id="eventTitle">
+                    Loading event information...
+                </p>
+
+            </div>
+
+
+
+            <!-- Participant Count -->
+
+            <div class="dashboard-stats">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        👥
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Registered Participants
+                        </h3>
+
+                        <p id="participantCount">
+                            0
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Participants -->
+
+            <div class="dashboard-section">
+
+                <div class="section-heading">
+
+                    <h2>
+                        Participant List
+                    </h2>
+
+                    <p>
+                        Details of students registered
+                        for this event.
+                    </p>
+
+                </div>
+
+
+                <div
+                    id="participantsContainer"
+                    class="events-table-container"
+                >
+
+                    <p>
+                        Loading participants...
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- Back Button -->
+
+            <div class="back-section">
+
+                <a
+                    href="dashboard.html"
+                    class="secondary-btn"
+                >
+                    ← Back to Dashboard
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+
+    <!-- ==============================
+         FOOTER
+    ============================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <p>
+                © 2026 EventHub. All rights reserved.
+            </p>
+
+            <p>
+                Event Management System
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ==============================
+         JAVASCRIPT
+    ============================== -->
+
+    <script src="../js/admin-auth.js"></script>
+
+    <script src="../js/admin-participants.js"></script>
+
+
+    <script>
+
+        const logoutLink =
+            document.getElementById(
+                "logoutLink"
+            );
+
+
+        if (logoutLink) {
+
+            logoutLink.addEventListener(
+                "click",
+                function (event) {
+
+                    event.preventDefault();
+
+                    logoutAdmin();
+
+                }
+            );
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>
